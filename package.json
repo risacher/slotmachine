@@ -1,0 +1,11 @@
+{	
+  "name": "slotmachine",
+  "description": "modular web application framework",
+  "version": "0.0.1",
+  "private": true,
+  "main": "index",
+  "dependencies": {
+     "express": "*",
+     "socket.io": "*"
+  }
+}
