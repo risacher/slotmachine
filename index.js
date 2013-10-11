@@ -1,2 +1,2 @@
 
-require('./lib/slotmachine');
+module.exports = require('./lib/slotmachine');
