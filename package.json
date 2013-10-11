@@ -1,6 +1,14 @@
 {	
   "name": "slotmachine",
   "description": "modular web application framework",
+  "author": {
+    "name": "Daniel Risacher",
+    "email": "dan@risacher.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/risacher/slotmachine"
+  },
   "version": "0.0.1",
   "private": true,
   "main": "index",

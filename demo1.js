@@ -11,14 +11,11 @@ slots.loadMod("hello");
 slots.loadMod("mods");
 
 slots.app.get('/', function(req, res){
-    var body = 'Hello World';
-    body += JSON.stringify(slots.mods);
-    res.setHeader('Content-Type', 'text/plain');
-    res.setHeader('Content-Length', body.length);
-    res.end(body);
+    res.writeHead(302, {
+	'Location': './index.html'
+    });
+    res.end();
 });
-
-
 
 slots.listen(3001);
 console.log('Listening on port 3001');
