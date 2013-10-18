@@ -1,14 +1,17 @@
 var util = require('util');
 
+var slotz;
+
 function diagnose (req, res){
     var body = 'Diagnostic module:\n\n';
-    body += util.inspect(slots);
+    body += util.inspect(slotz);
     res.setHeader('Content-Type', 'text/plain');
     res.setHeader('Content-Length', body.length);
     res.end(body);
 };
 
 var load = function(slots) {
+    slotz = slots;
     slots.app.get('/diagnostic', diagnose);
 }
 
